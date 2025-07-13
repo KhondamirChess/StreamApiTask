@@ -10,6 +10,8 @@ public class Order {
     private final String status;
     private final Set<Product> products;
 
+
+
     public Long getId() {
         return id;
     }
@@ -36,5 +38,16 @@ public class Order {
         this.deliveryDate = deliveryDate;
         this.status = status;
         this.products = products;
+    }
+
+    @Override
+    public String toString() {
+        return "\n  Order{\n" +
+                "   id=" + id + ", \n" +
+                "   orderDate=" + orderDate + ", \n" +
+                "   deliveryDate=" + deliveryDate + ", \n" +
+                "   status='" + status + ", \n"  +
+                "   products=" + products + ", \n" +
+                '}';
     }
 }

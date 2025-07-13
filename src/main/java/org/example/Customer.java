@@ -14,4 +14,14 @@ public class Customer {
         this.level = level;
         this.orders = orders;
     }
+
+    @Override
+    public String toString(){
+        return "Customer{ " + "\n" +
+                "id: " + id + "\n" +
+                "name: " + name + "\n" +
+                "level: "+ level + "\n" +
+                "orders: " +orders +  "\n"+
+                "}";
+    }
 }
