@@ -15,14 +15,29 @@ public class Product {
         this.price = price;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
     @Override
     public String toString() {
-        return "    \n{ \n" +
-                "       id: " + id + "; " +
+        return "{ \n" +
+                "   id: " + id + "; " +
                 "name: " + name + "; " +
                 "category: " + category + "; " +
                 "price: " + price +
-                "}";
-
+                "\n}";
     }
 }

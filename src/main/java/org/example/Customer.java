@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Set;
 
 public class Customer {
@@ -23,5 +24,17 @@ public class Customer {
                 "level: "+ level + "\n" +
                 "orders: " +orders +  "\n"+
                 "}";
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Long getLevel() {
+        return level;
     }
 }
