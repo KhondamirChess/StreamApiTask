@@ -37,4 +37,8 @@ public class Customer {
     public Long getLevel() {
         return level;
     }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
 }
